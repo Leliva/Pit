@@ -17,8 +17,11 @@ public class CsvMapper {
 
             beans.forEach(System.out::println);
 
+
+
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+
     }
 }
