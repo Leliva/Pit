@@ -1,18 +1,14 @@
 import com.opencsv.bean.CsvBindByPosition;
 import com.opencsv.bean.CsvDate;
-import com.opencsv.bean.CsvNumber;
 
 import java.math.BigDecimal;
 import java.util.Date;
 
-public class DaneCsv {
+public class DaneCsvPit5l {
 
     @CsvDate(value ="yyyy-MM-dd" )
     @CsvBindByPosition(position = 0)
     Date operationDate;
-
-    @CsvBindByPosition(position = 3)
-    String category;
 
     @CsvBindByPosition(position = 4)
     private String amount;
@@ -31,7 +27,6 @@ public class DaneCsv {
     public String toString() {
         return "DaneCsv{" +
                 "operationDate: '" + operationDate + '\'' +
-                ", kategoria: '" + category + '\'' +
                 ", Kwota='" + getAmount() + '\'' +
                 '}';
     }
